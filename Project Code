@@ -1,16 +1,24 @@
 // 21/1/2025 - 10:42 AM
+// 21/1/2025 - 03:05 PM
 
 #include<stdio.h>
 #include<string.h>
+#include<stdlib.h>
+#include<time.h>
 
 int main(){
-    int score = 0;
-    char options[3][9] = {"rock","paper","scissors"};
-    char pChoice[10] = "";
-    while (1){
-        gets(pChoice);
-        puts(pChoice);
-        if (strcmp(pChoice,"!stop") == 0){
+    srand(time(NULL));                                  // random seed generator for rand() function
+    int score = 0;                                      // player score
+    int rnum = 0;                                       // random number
+    char options[3][9] = {"rock","paper","scissors"};   // 2D array of options
+    char pChoice[10] = "" ;                             // player choice
+
+    while (1){                                          // infinite loop
+        fgets(pChoice, sizeof(pChoice), stdin);         // get player input safely some buffer thing AI told 😭
+        puts(pChoice);                                  // print player input
+        rnum = rand() % 3;                              // random number generator between 0 and 2
+        printf("%d",rnum);                              // print random number
+        if (strcmp(pChoice,"!stop") == 0){              // Check if player input is '!stop' to exit the game loop
             break;
         }
     }
