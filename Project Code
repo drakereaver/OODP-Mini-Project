@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(){
-    srand(time(NULL));                                  // random seed generator for rand() function
-    int score = 0;                                      // player score
-    int rnum = 0;                                       // random number
+    srand(time(NULL));  // random seed generator for rand() function
+    int score = 0; // player score
+    int rnum = 0;  // random number
     char options[3][10] = {"rock","paper","scissors"};   // 2D array of options
     char pChoice[10] = {'\0'};                          // player choice
     char cmpChoice[10];
@@ -24,15 +24,13 @@ int main(){
             printf("Your score is: %d\n",score);
             continue;
         }
-        else if (!(strcmp(pChoice, "rock") == 0 || strcmp(pChoice, "paper") == 0 || strcmp(pChoice, "scissors") == 0)){
+        else if (strcmp(pChoice, "rock") != 0 && strcmp(pChoice, "paper") != 0 && strcmp(pChoice, "scissors") != 0) {
             printf("Invalid input\n");
             continue;
         }
-        
         rnum = rand() % 3;                             
         strncpy(cmpChoice, options[rnum], sizeof(cmpChoice) - 1);
         puts(cmpChoice);
-
         if (strcmp(pChoice, cmpChoice) == 0) {
             printf("It's a draw!\n");
         } else if ((strcmp(pChoice, "rock") == 0 && strcmp(cmpChoice, "scissors") == 0) ||
@@ -42,10 +40,9 @@ int main(){
             score++;
         } else {
             printf("You lose!\n");
-            if (score >0 ){
-            score--;}
-
+            if (score>0){
+                score--;
         }
     }
-    return 0;
+    }
 }
