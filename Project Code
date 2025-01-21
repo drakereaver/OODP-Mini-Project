@@ -1,6 +1,3 @@
-// 21/1/2025 - 10:42 AM
-// 21/1/2025 - 03:05 PM
-// 21/1/2025 - 06:30 PM
 
 #include<stdio.h>
 #include<string.h>
@@ -8,9 +5,9 @@
 #include<time.h>
 
 int main(){
-    srand(time(NULL));                                  // random seed generator for rand() function
-    int score = 0;                                      // player score
-    int rnum = 0;                                       // random number
+    srand(time(NULL));  // random seed generator for rand() function
+    int score = 0; // player score
+    int rnum = 0;  // random number
     char options[3][10] = {"rock","paper","scissors"};   // 2D array of options
     char pChoice[10] = {'\0'};                          // player choice
     char cmpChoice[10];
