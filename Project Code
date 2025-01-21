@@ -1,8 +1,8 @@
 
-#include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
-#include<time.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(){
     srand(time(NULL));  // random seed generator for rand() function
