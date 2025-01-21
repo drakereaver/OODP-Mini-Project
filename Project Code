@@ -24,7 +24,7 @@ int main(){
             printf("Your score is: %d\n",score);
             continue;
         }
-        else if (!(strcmp(pChoice, "rock") == 0 || strcmp(pChoice, "paper") == 0 || strcmp(pChoice, "scissors") == 0)){
+        else if (!(strcmp(pChoice, "rock") == 0 && strcmp(pChoice, "paper") == 0 && strcmp(pChoice, "scissors") == 0)){
             printf("Invalid input\n");
             continue;
         }
@@ -42,6 +42,9 @@ int main(){
             score++;
         } else {
             printf("You lose!\n");
+            if (score >0 ){
+            score--}
+
         }
     }
     return 0;
