@@ -43,8 +43,8 @@ int main(){
         } else {
             printf("You lose!\n");
             if (score >0 ){
-            score--;}
-
+            score--;
+            }
         }
     }
     return 0;
