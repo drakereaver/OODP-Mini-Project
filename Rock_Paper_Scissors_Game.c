@@ -9,7 +9,7 @@ int main(){
     int rnum = 0;                                       // random number
     char options[3][10] = {"rock","paper","scissors"};  // 2D array of options
     char pChoice[10] = {'\0'};                          // player choice
-    char cmpChoice[10];                                 
+    char cmpChoice[10];                                 // computer choice
     printf("Welcome To Rock Paper Scissors Game\n");
     printf("type '!score' to view score or type '!stop' to exit:\n");
     while (1) {
@@ -24,7 +24,7 @@ int main(){
             printf("Your score is: %d\n",score);
             continue;
         }
-        else if (!(strcmp(pChoice, "rock") == 0 || strcmp(pChoice, "paper") == 0 || strcmp(pChoice, "scissors") == 0)){
+        else if (!(strcmp(pChoice, "rock") == 0 || strcmp(pChoice, "paper") == 0 || strcmp(pChoice, "scissors") == 0)){  // 0 equal 1 1st string -1 2nd string
             printf("Invalid input\n");
             continue;
         }
