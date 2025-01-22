@@ -16,7 +16,8 @@ int main(){
         printf("Enter your choice (rock, paper, scissors): \n");
         fgets(pChoice, sizeof(pChoice), stdin);         // read input with newline character
         pChoice[strcspn(pChoice, "\n")] = '\0';         // remove newline character if present
-        if (strcmp(pChoice,"!stop") == 0){             
+        if (strcmp(pChoice,"!stop") == 0){
+            printf("Thank You for playing our Game!!\n");
             return 0;                                      
         } 
         else if (strcmp(pChoice, "!score") == 0)
