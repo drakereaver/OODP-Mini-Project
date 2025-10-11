@@ -1,7 +1,7 @@
 # OODP Mini-Project
 This is the mini project for the Subject Object Oriented Design Programming
  
-## Team Members: 
+## Team Members
 - Heytish (RA2412707010008)
 - Ayaan (RA2412707010012)
 - Kshitij (RA2412707010016)
@@ -12,7 +12,7 @@ This project is a comprehensive website dedicated to Online Quiz,
 
 ## Table of Contents
 
-- [Contributing](#teammembers)
+- [Contributing](#team-members)
 - [Project Structure](#project-structure)
 - [Features](#features)
 - [Installation](#installation)
